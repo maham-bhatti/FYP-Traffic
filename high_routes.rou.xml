@@ -1,0 +1,137 @@
+<!-- Peak-hour (100% volume) | Morning rush / evening rush -->
+<routes>
+
+    <!-- Vehicle Types — Cars + Bikes + Buses in ALL density files -->
+    <vType id="car" length="5.0" minGap="2.5" maxSpeed="15.0" accel="2.0" decel="4.5" color="1,1,0" guiShape="passenger"/>
+    <vType id="bike" length="2.2" minGap="1.5" maxSpeed="12.0" accel="1.5" decel="3.0" color="0,1,0" guiShape="motorcycle"/>
+    <vType id="bus" length="13.0" minGap="3.0" maxSpeed="10.0" accel="1.0" decel="3.0" color="1,0,0" guiShape="bus"/>
+
+    <!-- Route Definitions — identical edges in all density files -->
+    <route id="route_41w" edges="we_41_2 we_41_1 we_41_0"/>
+    <route id="route_42e" edges="ew_42_0 ew_42_1 ew_42_2"/>
+    <route id="route_42w" edges="we_42_2 we_42_1 we_42_0"/>
+    <route id="route_43w" edges="we_43_2 we_43_1 we_43_0"/>
+    <route id="route_44e" edges="ew_44_0 ew_44_1 ew_44_2"/>
+    <route id="route_9s" edges="ns_9th_2 ns_9th_1 ns_9th_0"/>
+    <route id="route_8n" edges="sn_8th_0 sn_8th_1 sn_8th_2"/>
+    <route id="route_7s" edges="ns_7th_2 ns_7th_1 ns_7th_0"/>
+    <route id="route_6n" edges="sn_6th_0 sn_6th_1 sn_6th_2"/>
+    <route id="turn_9s_to_42e" edges="ns_9th_2 ns_9th_1 ew_42_0 ew_42_1 ew_42_2"/>
+    <route id="turn_42w_to_9s" edges="we_42_2 we_42_1 we_42_0 ns_9th_0"/>
+    <route id="turn_8n_to_42w" edges="sn_8th_0 we_42_0 ns_9th_0"/>
+    <route id="turn_8n_to_42e" edges="sn_8th_0 ew_42_1 ew_42_2"/>
+    <route id="turn_42e_to_8n" edges="ew_42_0 sn_8th_1 sn_8th_2"/>
+    <route id="turn_42w_to_8n" edges="we_42_1 sn_8th_1 sn_8th_2"/>
+    <route id="turn_7s_to_42e" edges="ns_7th_2 ns_7th_1 ew_42_2"/>
+    <route id="turn_7s_to_42w" edges="ns_7th_2 ns_7th_1 we_42_1 we_42_0"/>
+    <route id="turn_42w_to_7s" edges="we_42_2 ns_7th_0 we_41_1 we_41_0"/>
+    <route id="turn_42e_to_7s" edges="ew_42_0 ew_42_1 ns_7th_0 we_41_1 we_41_0"/>
+    <route id="turn_6n_to_42w" edges="sn_6th_0 we_42_2 we_42_1 we_42_0"/>
+    <route id="turn_42e_to_6n" edges="ew_42_0 ew_42_1 ew_42_2 sn_6th_1 sn_6th_2"/>
+    <route id="turn_43w_to_9s" edges="we_43_0 ns_9th_1 ns_9th_0"/>
+    <route id="turn_43w_to_8n" edges="we_43_1 sn_8th_2 ew_44_1 ew_44_2"/>
+    <route id="turn_8n_to_43w" edges="sn_8th_1 we_43_0 ns_9th_1 ns_9th_0"/>
+    <route id="turn_43w_to_7s" edges="we_43_2 ns_7th_1 ns_7th_0 we_41_1 we_41_0"/>
+    <route id="turn_7s_to_43w" edges="ns_7th_2 we_43_1 we_43_0 ns_9th_1"/>
+    <route id="turn_6n_to_43w" edges="sn_6th_1 we_43_2 we_43_1 we_43_0"/>
+    <route id="turn_8n_to_44e" edges="sn_8th_2 ew_44_1 ew_44_2"/>
+    <route id="turn_44e_to_7s" edges="ew_44_0 ew_44_1 ns_7th_2 ns_7th_1 ns_7th_0 we_41_1 we_41_0"/>
+    <route id="turn_41w_to_8n" edges="we_41_1 sn_8th_0 sn_8th_1 sn_8th_2 ew_44_1"/>
+    <route id="turn_7s_to_41w" edges="ns_7th_0 we_41_1 we_41_0"/>
+
+    <!-- Flows scaled to 100% of base volume -->
+    <flow id="f_car_0"  type="car"  route="route_41w" begin="0" vehsPerHour="120"  departLane="best" departSpeed="max"/>
+    <flow id="f_bike_0" type="bike" route="route_41w" begin="0" vehsPerHour="60" departLane="best" departSpeed="max"/>
+    <flow id="f_bus_0"  type="bus"  route="route_41w" begin="0" vehsPerHour="30"  departLane="best" departSpeed="max"/>
+    <flow id="f_car_1"  type="car"  route="route_42e" begin="0" vehsPerHour="40"  departLane="best" departSpeed="max"/>
+    <flow id="f_bike_1" type="bike" route="route_42e" begin="0" vehsPerHour="20" departLane="best" departSpeed="max"/>
+    <flow id="f_bus_1"  type="bus"  route="route_42e" begin="0" vehsPerHour="10"  departLane="best" departSpeed="max"/>
+    <flow id="f_car_2"  type="car"  route="route_42w" begin="0" vehsPerHour="120"  departLane="best" departSpeed="max"/>
+    <flow id="f_bike_2" type="bike" route="route_42w" begin="0" vehsPerHour="60" departLane="best" departSpeed="max"/>
+    <flow id="f_bus_2"  type="bus"  route="route_42w" begin="0" vehsPerHour="30"  departLane="best" departSpeed="max"/>
+    <flow id="f_car_3"  type="car"  route="route_43w" begin="0" vehsPerHour="120"  departLane="best" departSpeed="max"/>
+    <flow id="f_bike_3" type="bike" route="route_43w" begin="0" vehsPerHour="60" departLane="best" departSpeed="max"/>
+    <flow id="f_bus_3"  type="bus"  route="route_43w" begin="0" vehsPerHour="30"  departLane="best" departSpeed="max"/>
+    <flow id="f_car_4"  type="car"  route="route_44e" begin="0" vehsPerHour="120"  departLane="best" departSpeed="max"/>
+    <flow id="f_bike_4" type="bike" route="route_44e" begin="0" vehsPerHour="60" departLane="best" departSpeed="max"/>
+    <flow id="f_bus_4"  type="bus"  route="route_44e" begin="0" vehsPerHour="30"  departLane="best" departSpeed="max"/>
+    <flow id="f_car_5"  type="car"  route="route_9s" begin="0" vehsPerHour="120"  departLane="best" departSpeed="max"/>
+    <flow id="f_bike_5" type="bike" route="route_9s" begin="0" vehsPerHour="60" departLane="best" departSpeed="max"/>
+    <flow id="f_bus_5"  type="bus"  route="route_9s" begin="0" vehsPerHour="30"  departLane="best" departSpeed="max"/>
+    <flow id="f_car_6"  type="car"  route="route_8n" begin="0" vehsPerHour="120"  departLane="best" departSpeed="max"/>
+    <flow id="f_bike_6" type="bike" route="route_8n" begin="0" vehsPerHour="60" departLane="best" departSpeed="max"/>
+    <flow id="f_bus_6"  type="bus"  route="route_8n" begin="0" vehsPerHour="30"  departLane="best" departSpeed="max"/>
+    <flow id="f_car_7"  type="car"  route="route_7s" begin="0" vehsPerHour="120"  departLane="best" departSpeed="max"/>
+    <flow id="f_bike_7" type="bike" route="route_7s" begin="0" vehsPerHour="60" departLane="best" departSpeed="max"/>
+    <flow id="f_bus_7"  type="bus"  route="route_7s" begin="0" vehsPerHour="30"  departLane="best" departSpeed="max"/>
+    <flow id="f_car_8"  type="car"  route="route_6n" begin="0" vehsPerHour="120"  departLane="best" departSpeed="max"/>
+    <flow id="f_bike_8" type="bike" route="route_6n" begin="0" vehsPerHour="60" departLane="best" departSpeed="max"/>
+    <flow id="f_bus_8"  type="bus"  route="route_6n" begin="0" vehsPerHour="30"  departLane="best" departSpeed="max"/>
+    <flow id="f_car_9"  type="car"  route="turn_9s_to_42e" begin="0" vehsPerHour="40"  departLane="best" departSpeed="max"/>
+    <flow id="f_bike_9" type="bike" route="turn_9s_to_42e" begin="0" vehsPerHour="20" departLane="best" departSpeed="max"/>
+    <flow id="f_bus_9"  type="bus"  route="turn_9s_to_42e" begin="0" vehsPerHour="10"  departLane="best" departSpeed="max"/>
+    <flow id="f_car_10"  type="car"  route="turn_42w_to_9s" begin="0" vehsPerHour="40"  departLane="best" departSpeed="max"/>
+    <flow id="f_bike_10" type="bike" route="turn_42w_to_9s" begin="0" vehsPerHour="20" departLane="best" departSpeed="max"/>
+    <flow id="f_bus_10"  type="bus"  route="turn_42w_to_9s" begin="0" vehsPerHour="10"  departLane="best" departSpeed="max"/>
+    <flow id="f_car_11"  type="car"  route="turn_8n_to_42w" begin="0" vehsPerHour="40"  departLane="best" departSpeed="max"/>
+    <flow id="f_bike_11" type="bike" route="turn_8n_to_42w" begin="0" vehsPerHour="20" departLane="best" departSpeed="max"/>
+    <flow id="f_bus_11"  type="bus"  route="turn_8n_to_42w" begin="0" vehsPerHour="10"  departLane="best" departSpeed="max"/>
+    <flow id="f_car_12"  type="car"  route="turn_8n_to_42e" begin="0" vehsPerHour="40"  departLane="best" departSpeed="max"/>
+    <flow id="f_bike_12" type="bike" route="turn_8n_to_42e" begin="0" vehsPerHour="20" departLane="best" departSpeed="max"/>
+    <flow id="f_bus_12"  type="bus"  route="turn_8n_to_42e" begin="0" vehsPerHour="10"  departLane="best" departSpeed="max"/>
+    <flow id="f_car_13"  type="car"  route="turn_42e_to_8n" begin="0" vehsPerHour="40"  departLane="best" departSpeed="max"/>
+    <flow id="f_bike_13" type="bike" route="turn_42e_to_8n" begin="0" vehsPerHour="20" departLane="best" departSpeed="max"/>
+    <flow id="f_bus_13"  type="bus"  route="turn_42e_to_8n" begin="0" vehsPerHour="10"  departLane="best" departSpeed="max"/>
+    <flow id="f_car_14"  type="car"  route="turn_42w_to_8n" begin="0" vehsPerHour="40"  departLane="best" departSpeed="max"/>
+    <flow id="f_bike_14" type="bike" route="turn_42w_to_8n" begin="0" vehsPerHour="20" departLane="best" departSpeed="max"/>
+    <flow id="f_bus_14"  type="bus"  route="turn_42w_to_8n" begin="0" vehsPerHour="10"  departLane="best" departSpeed="max"/>
+    <flow id="f_car_15"  type="car"  route="turn_7s_to_42e" begin="0" vehsPerHour="40"  departLane="best" departSpeed="max"/>
+    <flow id="f_bike_15" type="bike" route="turn_7s_to_42e" begin="0" vehsPerHour="20" departLane="best" departSpeed="max"/>
+    <flow id="f_bus_15"  type="bus"  route="turn_7s_to_42e" begin="0" vehsPerHour="10"  departLane="best" departSpeed="max"/>
+    <flow id="f_car_16"  type="car"  route="turn_7s_to_42w" begin="0" vehsPerHour="40"  departLane="best" departSpeed="max"/>
+    <flow id="f_bike_16" type="bike" route="turn_7s_to_42w" begin="0" vehsPerHour="20" departLane="best" departSpeed="max"/>
+    <flow id="f_bus_16"  type="bus"  route="turn_7s_to_42w" begin="0" vehsPerHour="10"  departLane="best" departSpeed="max"/>
+    <flow id="f_car_17"  type="car"  route="turn_42w_to_7s" begin="0" vehsPerHour="40"  departLane="best" departSpeed="max"/>
+    <flow id="f_bike_17" type="bike" route="turn_42w_to_7s" begin="0" vehsPerHour="20" departLane="best" departSpeed="max"/>
+    <flow id="f_bus_17"  type="bus"  route="turn_42w_to_7s" begin="0" vehsPerHour="10"  departLane="best" departSpeed="max"/>
+    <flow id="f_car_18"  type="car"  route="turn_42e_to_7s" begin="0" vehsPerHour="40"  departLane="best" departSpeed="max"/>
+    <flow id="f_bike_18" type="bike" route="turn_42e_to_7s" begin="0" vehsPerHour="20" departLane="best" departSpeed="max"/>
+    <flow id="f_bus_18"  type="bus"  route="turn_42e_to_7s" begin="0" vehsPerHour="10"  departLane="best" departSpeed="max"/>
+    <flow id="f_car_19"  type="car"  route="turn_6n_to_42w" begin="0" vehsPerHour="40"  departLane="best" departSpeed="max"/>
+    <flow id="f_bike_19" type="bike" route="turn_6n_to_42w" begin="0" vehsPerHour="20" departLane="best" departSpeed="max"/>
+    <flow id="f_bus_19"  type="bus"  route="turn_6n_to_42w" begin="0" vehsPerHour="10"  departLane="best" departSpeed="max"/>
+    <flow id="f_car_20"  type="car"  route="turn_42e_to_6n" begin="0" vehsPerHour="120"  departLane="best" departSpeed="max"/>
+    <flow id="f_bike_20" type="bike" route="turn_42e_to_6n" begin="0" vehsPerHour="60" departLane="best" departSpeed="max"/>
+    <flow id="f_bus_20"  type="bus"  route="turn_42e_to_6n" begin="0" vehsPerHour="30"  departLane="best" departSpeed="max"/>
+    <flow id="f_car_21"  type="car"  route="turn_43w_to_9s" begin="0" vehsPerHour="40"  departLane="best" departSpeed="max"/>
+    <flow id="f_bike_21" type="bike" route="turn_43w_to_9s" begin="0" vehsPerHour="20" departLane="best" departSpeed="max"/>
+    <flow id="f_bus_21"  type="bus"  route="turn_43w_to_9s" begin="0" vehsPerHour="10"  departLane="best" departSpeed="max"/>
+    <flow id="f_car_22"  type="car"  route="turn_43w_to_8n" begin="0" vehsPerHour="40"  departLane="best" departSpeed="max"/>
+    <flow id="f_bike_22" type="bike" route="turn_43w_to_8n" begin="0" vehsPerHour="20" departLane="best" departSpeed="max"/>
+    <flow id="f_bus_22"  type="bus"  route="turn_43w_to_8n" begin="0" vehsPerHour="10"  departLane="best" departSpeed="max"/>
+    <flow id="f_car_23"  type="car"  route="turn_8n_to_43w" begin="0" vehsPerHour="40"  departLane="best" departSpeed="max"/>
+    <flow id="f_bike_23" type="bike" route="turn_8n_to_43w" begin="0" vehsPerHour="20" departLane="best" departSpeed="max"/>
+    <flow id="f_bus_23"  type="bus"  route="turn_8n_to_43w" begin="0" vehsPerHour="10"  departLane="best" departSpeed="max"/>
+    <flow id="f_car_24"  type="car"  route="turn_43w_to_7s" begin="0" vehsPerHour="40"  departLane="best" departSpeed="max"/>
+    <flow id="f_bike_24" type="bike" route="turn_43w_to_7s" begin="0" vehsPerHour="20" departLane="best" departSpeed="max"/>
+    <flow id="f_bus_24"  type="bus"  route="turn_43w_to_7s" begin="0" vehsPerHour="10"  departLane="best" departSpeed="max"/>
+    <flow id="f_car_25"  type="car"  route="turn_7s_to_43w" begin="0" vehsPerHour="40"  departLane="best" departSpeed="max"/>
+    <flow id="f_bike_25" type="bike" route="turn_7s_to_43w" begin="0" vehsPerHour="20" departLane="best" departSpeed="max"/>
+    <flow id="f_bus_25"  type="bus"  route="turn_7s_to_43w" begin="0" vehsPerHour="10"  departLane="best" departSpeed="max"/>
+    <flow id="f_car_26"  type="car"  route="turn_6n_to_43w" begin="0" vehsPerHour="40"  departLane="best" departSpeed="max"/>
+    <flow id="f_bike_26" type="bike" route="turn_6n_to_43w" begin="0" vehsPerHour="20" departLane="best" departSpeed="max"/>
+    <flow id="f_bus_26"  type="bus"  route="turn_6n_to_43w" begin="0" vehsPerHour="10"  departLane="best" departSpeed="max"/>
+    <flow id="f_car_27"  type="car"  route="turn_8n_to_44e" begin="0" vehsPerHour="40"  departLane="best" departSpeed="max"/>
+    <flow id="f_bike_27" type="bike" route="turn_8n_to_44e" begin="0" vehsPerHour="20" departLane="best" departSpeed="max"/>
+    <flow id="f_bus_27"  type="bus"  route="turn_8n_to_44e" begin="0" vehsPerHour="10"  departLane="best" departSpeed="max"/>
+    <flow id="f_car_28"  type="car"  route="turn_44e_to_7s" begin="0" vehsPerHour="30"  departLane="best" departSpeed="max"/>
+    <flow id="f_bike_28" type="bike" route="turn_44e_to_7s" begin="0" vehsPerHour="15" departLane="best" departSpeed="max"/>
+    <flow id="f_bus_28"  type="bus"  route="turn_44e_to_7s" begin="0" vehsPerHour="7"  departLane="best" departSpeed="max"/>
+    <flow id="f_car_29"  type="car"  route="turn_41w_to_8n" begin="0" vehsPerHour="30"  departLane="best" departSpeed="max"/>
+    <flow id="f_bike_29" type="bike" route="turn_41w_to_8n" begin="0" vehsPerHour="15" departLane="best" departSpeed="max"/>
+    <flow id="f_bus_29"  type="bus"  route="turn_41w_to_8n" begin="0" vehsPerHour="7"  departLane="best" departSpeed="max"/>
+    <flow id="f_car_30"  type="car"  route="turn_7s_to_41w" begin="0" vehsPerHour="30"  departLane="best" departSpeed="max"/>
+    <flow id="f_bike_30" type="bike" route="turn_7s_to_41w" begin="0" vehsPerHour="15" departLane="best" departSpeed="max"/>
+    <flow id="f_bus_30"  type="bus"  route="turn_7s_to_41w" begin="0" vehsPerHour="7"  departLane="best" departSpeed="max"/>
+
+</routes>
