@@ -1,0 +1,18 @@
+<nodes>
+    <node id="n_0_0" x="0.0" y="0.0" type="traffic_light" name="9th Avenue @ 41st Street"/>
+    <node id="n_0_1" x="500.0" y="0.0" type="traffic_light" name="8th Avenue @ 41st Street"/>
+    <node id="n_0_2" x="1000.0" y="0.0" type="traffic_light" name="7th Avenue @ 41st Street"/>
+    <node id="n_0_3" x="1500.0" y="0.0" type="traffic_light" name="6th Avenue @ 41st Street"/>
+    <node id="n_1_0" x="0.0" y="300.0" type="traffic_light" name="9th Avenue @ 42nd Street"/>
+    <node id="n_1_1" x="500.0" y="300.0" type="traffic_light" name="8th Avenue @ 42nd Street"/>
+    <node id="n_1_2" x="1000.0" y="300.0" type="traffic_light" name="7th Avenue @ 42nd Street"/>
+    <node id="n_1_3" x="1500.0" y="300.0" type="traffic_light" name="6th Avenue @ 42nd Street"/>
+    <node id="n_2_0" x="0.0" y="600.0" type="traffic_light" name="9th Avenue @ 43rd Street"/>
+    <node id="n_2_1" x="500.0" y="600.0" type="traffic_light" name="8th Avenue @ 43rd Street"/>
+    <node id="n_2_2" x="1000.0" y="600.0" type="traffic_light" name="7th Avenue @ 43rd Street"/>
+    <node id="n_2_3" x="1500.0" y="600.0" type="traffic_light" name="6th Avenue @ 43rd Street"/>
+    <node id="n_3_0" x="0.0" y="900.0" type="traffic_light" name="9th Avenue @ 44th Street"/>
+    <node id="n_3_1" x="500.0" y="900.0" type="traffic_light" name="8th Avenue @ 44th Street"/>
+    <node id="n_3_2" x="1000.0" y="900.0" type="traffic_light" name="7th Avenue @ 44th Street"/>
+    <node id="n_3_3" x="1500.0" y="900.0" type="traffic_light" name="6th Avenue @ 44th Street"/>
+</nodes>

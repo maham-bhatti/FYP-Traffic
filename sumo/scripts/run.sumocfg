@@ -1,0 +1,10 @@
+<configuration>
+    <input>
+        <net-file value="manhattan.net.xml"/>
+        <route-files value="final_routes.rou.xml"/>
+        <additional-files value="manhattan_labels.poi.xml"/>
+    </input>
+    <time>
+        <begin value="0"/>
+    </time>
+</configuration>

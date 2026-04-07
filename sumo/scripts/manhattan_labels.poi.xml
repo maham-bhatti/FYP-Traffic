@@ -1,0 +1,18 @@
+<additional>
+    <poi id="label_n_0_0" x="0.0" y="30.0" color="0,0,0" layer="100">9th Avenue @\n41st Street</poi>
+    <poi id="label_n_0_1" x="500.0" y="30.0" color="0,0,0" layer="100">8th Avenue @\n41st Street</poi>
+    <poi id="label_n_0_2" x="1000.0" y="30.0" color="0,0,0" layer="100">7th Avenue @\n41st Street</poi>
+    <poi id="label_n_0_3" x="1500.0" y="30.0" color="0,0,0" layer="100">6th Avenue @\n41st Street</poi>
+    <poi id="label_n_1_0" x="0.0" y="330.0" color="0,0,0" layer="100">9th Avenue @\n42nd Street</poi>
+    <poi id="label_n_1_1" x="500.0" y="330.0" color="0,0,0" layer="100">8th Avenue @\n42nd Street</poi>
+    <poi id="label_n_1_2" x="1000.0" y="330.0" color="0,0,0" layer="100">7th Avenue @\n42nd Street</poi>
+    <poi id="label_n_1_3" x="1500.0" y="330.0" color="0,0,0" layer="100">6th Avenue @\n42nd Street</poi>
+    <poi id="label_n_2_0" x="0.0" y="630.0" color="0,0,0" layer="100">9th Avenue @\n43rd Street</poi>
+    <poi id="label_n_2_1" x="500.0" y="630.0" color="0,0,0" layer="100">8th Avenue @\n43rd Street</poi>
+    <poi id="label_n_2_2" x="1000.0" y="630.0" color="0,0,0" layer="100">7th Avenue @\n43rd Street</poi>
+    <poi id="label_n_2_3" x="1500.0" y="630.0" color="0,0,0" layer="100">6th Avenue @\n43rd Street</poi>
+    <poi id="label_n_3_0" x="0.0" y="930.0" color="0,0,0" layer="100">9th Avenue @\n44th Street</poi>
+    <poi id="label_n_3_1" x="500.0" y="930.0" color="0,0,0" layer="100">8th Avenue @\n44th Street</poi>
+    <poi id="label_n_3_2" x="1000.0" y="930.0" color="0,0,0" layer="100">7th Avenue @\n44th Street</poi>
+    <poi id="label_n_3_3" x="1500.0" y="930.0" color="0,0,0" layer="100">6th Avenue @\n44th Street</poi>
+</additional>

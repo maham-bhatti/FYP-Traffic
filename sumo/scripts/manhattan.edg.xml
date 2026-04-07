@@ -1,0 +1,29 @@
+<edges>
+    <edge id="we_41_0" from="n_0_1" to="n_0_0" numLanes="2" speed="13.9"/>
+    <edge id="we_41_1" from="n_0_2" to="n_0_1" numLanes="2" speed="13.9"/>
+    <edge id="we_41_2" from="n_0_3" to="n_0_2" numLanes="2" speed="13.9"/>
+    <edge id="ew_42_0" from="n_1_0" to="n_1_1" numLanes="2" speed="16.8"/>
+    <edge id="we_42_0" from="n_1_1" to="n_1_0" numLanes="2" speed="16.8"/>
+    <edge id="ew_42_1" from="n_1_1" to="n_1_2" numLanes="2" speed="16.8"/>
+    <edge id="we_42_1" from="n_1_2" to="n_1_1" numLanes="2" speed="16.8"/>
+    <edge id="ew_42_2" from="n_1_2" to="n_1_3" numLanes="2" speed="16.8"/>
+    <edge id="we_42_2" from="n_1_3" to="n_1_2" numLanes="2" speed="16.8"/>
+    <edge id="we_43_0" from="n_2_1" to="n_2_0" numLanes="2" speed="13.9"/>
+    <edge id="we_43_1" from="n_2_2" to="n_2_1" numLanes="2" speed="13.9"/>
+    <edge id="we_43_2" from="n_2_3" to="n_2_2" numLanes="2" speed="13.9"/>
+    <edge id="ew_44_0" from="n_3_0" to="n_3_1" numLanes="2" speed="13.9"/>
+    <edge id="ew_44_1" from="n_3_1" to="n_3_2" numLanes="2" speed="13.9"/>
+    <edge id="ew_44_2" from="n_3_2" to="n_3_3" numLanes="2" speed="13.9"/>
+    <edge id="ns_9th_0" from="n_1_0" to="n_0_0" numLanes="3" speed="16.8"/>
+    <edge id="sn_8th_0" from="n_0_1" to="n_1_1" numLanes="3" speed="16.8"/>
+    <edge id="ns_7th_0" from="n_1_2" to="n_0_2" numLanes="3" speed="16.8"/>
+    <edge id="sn_6th_0" from="n_0_3" to="n_1_3" numLanes="3" speed="16.8"/>
+    <edge id="ns_9th_1" from="n_2_0" to="n_1_0" numLanes="3" speed="16.8"/>
+    <edge id="sn_8th_1" from="n_1_1" to="n_2_1" numLanes="3" speed="16.8"/>
+    <edge id="ns_7th_1" from="n_2_2" to="n_1_2" numLanes="3" speed="16.8"/>
+    <edge id="sn_6th_1" from="n_1_3" to="n_2_3" numLanes="3" speed="16.8"/>
+    <edge id="ns_9th_2" from="n_3_0" to="n_2_0" numLanes="3" speed="16.8"/>
+    <edge id="sn_8th_2" from="n_2_1" to="n_3_1" numLanes="3" speed="16.8"/>
+    <edge id="ns_7th_2" from="n_3_2" to="n_2_2" numLanes="3" speed="16.8"/>
+    <edge id="sn_6th_2" from="n_2_3" to="n_3_3" numLanes="3" speed="16.8"/>
+</edges>

@@ -1,0 +1,7 @@
+<viewsettings>
+    <scheme name="custom">
+        <junction><junctionName show="true" size="80"/></junction>
+        <streetName show="true" size="60"/>
+        <poi><poiName show="true" size="70"/></poi>
+    </scheme>
+</viewsettings>

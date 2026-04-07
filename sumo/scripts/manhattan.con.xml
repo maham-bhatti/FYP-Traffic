@@ -1,0 +1,14 @@
+<connections>
+
+    
+    <connection from="ns_7th_0" to="we_41_1" fromLane="0" toLane="0"/>
+    <connection from="ns_7th_0" to="we_41_1" fromLane="1" toLane="1"/>
+    <connection from="ns_7th_0" to="we_41_1" fromLane="2" toLane="1"/>
+
+    
+    <connection from="sn_8th_2" to="ew_44_1" fromLane="0" toLane="0"/>
+    <connection from="sn_8th_2" to="ew_44_1" fromLane="1" toLane="1"/>
+    <connection from="sn_8th_2" to="ew_44_1" fromLane="2" toLane="1"/>
+</connections>
+
+
